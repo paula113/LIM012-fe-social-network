@@ -148,10 +148,8 @@ const privateCurrentUser = (doc) => {
   const publicOrPrivateSelector = section.querySelector('.publicOrPrivateSelector');
   // console.log(publicOrPrivateSelector);
   if (publicOrPrivateSelector != null) {
-    console.log(publicOrPrivateSelector.value);
     publicOrPrivateSelector.addEventListener('change', (e) => {
       e.preventDefault();
-      console.log(e.target.value);
       changeVisibility(doc.id, publicOrPrivateSelector.value);
     });
   }
@@ -161,21 +159,19 @@ const privateCurrentUser = (doc) => {
   // al hacer click en el boton del lapiz para editar publicacion
   modificar.addEventListener('click', (e) => {
     e.preventDefault();
-    console.log('dentro de boton modificar');
     textareaEdit.classList.remove('displayNone');
     textareaEdit.focus();
   });
 
   // agregando evento de click al btn guardar cambio en la publicacion
   const btnEdit = section.querySelector('.cambioBtn');
-  console.log(btnEdit); // null
   if (btnEdit) {
     btnEdit.addEventListener('click', (e) => {
       e.preventDefault();
       editNote(doc.id, textareaEdit.value);
     });
   }
-  // console.log(doc.data().arrayUidLikes);
+  // LIKES
   const likeHeart = section.querySelector('[for="likeHeart"]');
   likeHeart.addEventListener('click', (e) => {
     e.preventDefault();
@@ -184,21 +180,6 @@ const privateCurrentUser = (doc) => {
   // window.addEventListener('click', (e) => {
   //   console.log(e.target);
   // });
-  // console.log(`soy array ${Object.values(doc.data().arrayUidLikes)}`);
-  // likeHeart.addEventListener('click', (e) => {
-  //   // likeHeart.setAttribute('disabled', false);
-  //   // console.log(e.target.checked);
-  //   e.preventDefault();
-  // console.log('j');
-  //   // if (doc.data().arrayUidLikes.some(x => x.currentUserId === user.uid)) {
-  //   //   const value = -1;
-  //   //   dislikeCounter(doc.id, value, user);
-  //   // } else {
-  //   //   const value = 1;
-  //   //   likeCounter(doc.id, value, user);
-  //   // }
-  // });
-
   return section;
 };
 
