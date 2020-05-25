@@ -34,18 +34,19 @@ const likeTemp = (doc) => {
         </label>
     </div>
     `;
-  } else {
-    // este si hace click
-    div = `
-    <div class="likes">
-    <span>${doc.data().like === undefined ? 0 : 0}</span>
-        <label for="likeHeart">
-          <input name="likeHeart" type="checkbox">
-          <img src="img/icons/heart-solid.svg">
-        </label>
-    </div>
-    `;
   }
+  // else {
+  //   // este si hace click
+  //   div = `
+  //   <div class="likes">
+  //   <span>${doc.data().like === undefined ? 0 : 0}</span>
+  //       <label for="likeHeart">
+  //         <input name="likeHeart" type="checkbox">
+  //         <img src="img/icons/heart-solid.svg">
+  //       </label>
+  //   </div>
+  //   `;
+  // }
 
   return div;
 };
