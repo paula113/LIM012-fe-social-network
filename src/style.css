@@ -40,7 +40,7 @@ body {
   margin: 1rem;
 }
 
- /* Seccion SignIn y SignUp en el html*/
+/* Seccion SignIn y SignUp en el html*/
 #logIn {
   background: linear-gradient(#FFFFFF, #F4A82C);
   height: 100vh;
@@ -103,6 +103,11 @@ body {
   height: 1.3rem;
   margin: .3rem auto;
 }
+.likes img{
+  width: 2rem;
+  height: 1.5rem;
+  margin: 0;
+}
 
 /* TRASH IMG */
 .figureContainerIcons label img{
@@ -110,6 +115,7 @@ body {
   height: 1.5rem;
   margin: .4rem auto;
 }
+
 
 #googleIcon img {
   width: 30px;
@@ -225,17 +231,7 @@ p span a {
   width: 4rem;
   height: 2rem;
 }
-.likes label{
 
-}
-.likes input{
-  display: none;
-}
-.likes img{
-  width: 2rem;
-  height: 1.5rem;
-  margin: 0;
-}
 /*franja azul donde esta la opcion de publicar y si es publico o privado*/
 
 .footerHomePublication {
@@ -302,7 +298,9 @@ p span a {
   margin: .2rem auto;
 }
 
-
+.likes input{
+  display: none;
+}
 
 /* TRASH BOTON */
 .figureContainerIcons {

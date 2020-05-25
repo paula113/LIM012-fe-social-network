@@ -29,18 +29,6 @@ import {
 } from '../src/firestore-controller/firestore.js';
 
 
-// describe('crear y mostrar post', () => {
-// eslint-disable-next-line max-len
-// it('Debería porder agregar una nota', done => publishStatus('test Sunday', 'test@gmail.com', 'me llamo test sunday. Puedes verlo?', '5/5/2020 10:05:11', 'public', '', 'lv0i9')
-//     .then(() => getStatus(
-//       (data) => {
-//         const result = data.find(note => note.status === 'me llamo test sunday. Puedes verlo?');
-//         expect(result.status).toBe('me llamo test sunday. Puedes verlo?');
-//         done();
-//       },
-//     )));
-// });
-
 const doc = {
   id: '38cj4',
   name: 'prueba',
@@ -74,15 +62,6 @@ describe('crear y mostrar post', () => {
       };
       getStatus(callback);
     }));
-// it('Debería poder agregar un like a un post', done => likeCounter(doc, value, user)
-//   .then(() => getStatus(
-//     (data) => {
-//       const result = data.find(note => note.id === 'doc.id');
-//       expect(result.data().arrayUidLikes[currentUserId]).toEqual(user.uid);
-//       done();
-//     },
-//   )));
-
 
   it('Debería poder modificar si es publico o privado', done => changeVisibility('abc1d', 'private')
     .then(() => getStatus(
