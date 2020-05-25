@@ -45,12 +45,3 @@ describe('signInWithGoogle', () => {
       });
   });
 });
-
-// describe('currentUser', () => {
-//   it('deberia poder iniciar sesion con google', () => {
-//     currentUser()
-//       .then(() => {
-//         expect(firebase.auth().currentUser).toBe('google.com');
-//       });
-//   });
-// });
