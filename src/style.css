@@ -232,6 +232,9 @@ p span a {
   height: 2rem;
 }
 
+.likes input{
+  display: none;
+}
 /*franja azul donde esta la opcion de publicar y si es publico o privado*/
 
 .footerHomePublication {
@@ -296,10 +299,6 @@ p span a {
   background-color:  #3376BC;
   color: white;
   margin: .2rem auto;
-}
-
-.likes input{
-  display: none;
 }
 
 /* TRASH BOTON */

@@ -139,7 +139,7 @@ const privateCurrentUser = (doc) => {
 
   // agregando evento de click al btn eliminar un post
   const btnDeleted = section.querySelector('[for="delete"]');
-  console.log(btnDeleted);
+  // console.log(btnDeleted);
   btnDeleted.addEventListener('click', () => {
     deletePublication(doc.id);
   });
@@ -149,8 +149,15 @@ const privateCurrentUser = (doc) => {
   const publicOrPrivateSelector = section.querySelector('.publicOrPrivateSelector');
   // console.log(publicOrPrivateSelector);
   if (publicOrPrivateSelector != null) {
+<<<<<<< HEAD
     publicOrPrivateSelector.addEventListener('change', (e) => {
       e.preventDefault();
+=======
+    // console.log(publicOrPrivateSelector.value);
+    publicOrPrivateSelector.addEventListener('change', (e) => {
+      e.preventDefault();
+      // console.log(e.target.value);
+>>>>>>> 56879ae66912c51acec13225617cf368daf0d66f
       changeVisibility(doc.id, publicOrPrivateSelector.value);
     });
   }
@@ -160,12 +167,20 @@ const privateCurrentUser = (doc) => {
   // al hacer click en el boton del lapiz para editar publicacion
   modificar.addEventListener('click', (e) => {
     e.preventDefault();
+<<<<<<< HEAD
+=======
+    // console.log('dentro de boton modificar');
+>>>>>>> 56879ae66912c51acec13225617cf368daf0d66f
     textareaEdit.classList.remove('displayNone');
     textareaEdit.focus();
   });
 
   // agregando evento de click al btn guardar cambio en la publicacion
   const btnEdit = section.querySelector('.cambioBtn');
+<<<<<<< HEAD
+=======
+  // console.log(btnEdit); // null
+>>>>>>> 56879ae66912c51acec13225617cf368daf0d66f
   if (btnEdit) {
     btnEdit.addEventListener('click', (e) => {
       e.preventDefault();

@@ -38,5 +38,5 @@ li.forEach((el) => {
 });
 
 
-const numeroDeEntradas = window.history.length;
-console.log(numeroDeEntradas);
+// const numeroDeEntradas = window.history.length;
+// console.log(numeroDeEntradas);

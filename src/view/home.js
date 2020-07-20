@@ -52,7 +52,7 @@ const perfil = () => {
   });
 
   window.addEventListener('click', (e) => {
-    console.log(e.target);
+    // console.log(e.target);
     if (e.target === flex) {
       modal.style.display = 'none';
     }
